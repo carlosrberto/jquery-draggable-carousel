@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>jQuery Draggable Carousel</title>
+        <link rel="stylesheet" href="jquery.draggablecarousel.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <style type="text/css" media="screen">
+            * { margin:0; padding:0; }
+            body{ padding:50px; font-family:Arial, Verdana; }
+            li{ list-style-type:none; }
+            h1{ padding-bottom:20px; }
+            .custom-width{  }
+            #container{ width:700px; margin:0 auto; }
+            .sample{ padding-bottom:60px; }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="jquery-ui-1.8.11.custom.draggable.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+        <script src="jquery.draggablecarousel-0.1.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(document).ready(function() {
+                $('#carousel-demo-1').draggableCarousel({ 'keyControls' : true })
+                $('#carousel-demo-2').draggableCarousel({
+                    'linkNext'  :   '.draggablecarousel-next2',
+                    'linkPrev'  :   '.draggablecarousel-prev2',
+                })
+            });
+        </script>
+    </head>
+    
+    <body>
+        
+        <div id="container">
+            
+            <h1>jQuery Draggable Carousel</h1>
+            
+            <div class="sample">
+                
+                <div id="carousel-demo-1">
+                    <ul>
+                        <li><img src="01.jpg" alt=""></li>
+                        <li><img src="02.jpg" alt=""></li>
+                        <li><img src="03.jpg" alt=""></li>
+                        <li><img src="04.jpg" alt=""></li>
+                        <li><img src="01.jpg" alt=""></li>
+                        <li><img src="02.jpg" alt=""></li>
+                        <li><img src="03.jpg" alt=""></li>
+                        <li><img src="04.jpg" alt=""></li>
+                        <li><img src="01.jpg" alt=""></li>
+                        <li><img src="02.jpg" alt=""></li>
+                        <li><img src="03.jpg" alt=""></li>
+                        <li><img src="04.jpg" alt=""></li>
+                        <li><img src="01.jpg" alt=""></li>
+                        <li><img src="02.jpg" alt=""></li>
+                        <li><img src="03.jpg" alt=""></li>
+                        <li><img src="04.jpg" alt=""></li>
+                    </ul>
+                </div>
+                
+                
+                <a href="#" id="drag-prev" class="draggablecarousel-prev">Prev</a>
+                <a href="#" id="drag-next" class="draggablecarousel-next">Next</a>
+                
+            </div>
+
+            
+            <div id="sample">
+                
+                <div id="carousel-demo-2" class="custom-width">
+                    <ul>
+                        <li>
+                            <img src="01.jpg" alt="">
+                            <ul>
+                                <li>oi</li>
+                            </ul>
+                        </li>
+                        <li><img src="02.jpg" alt=""></li>
+                        <li><img src="03.jpg" alt=""></li>
+                        <li><img src="04.jpg" alt=""></li>
+                        <li><img src="01.jpg" alt=""></li>
+                        <li><img src="02.jpg" alt=""></li>
+                    </ul>
+                </div>
+
+                <a href="#" id="drag-prev" class="draggablecarousel-prev2">Prev</a>
+                <a href="#" id="drag-next" class="draggablecarousel-next2">Next</a>
+                
+            </div>
+            
+            
+        </div>
+
+
+
+
+    </body>
+</html>
