@@ -1,0 +1,4 @@
+.draggablecarousel-container{ width:500px; height:250px; outline:1px solid #666; overflow:hidden; position:relative; overflow:hidden; }
+.draggablecarousel-container .draggablecarousel-draggable{ position:absolute; }
+.draggablecarousel-item{ width:500px; height:250px; margin:0 20px 0 0; outline:1px solid red; float:left; display:inline; position:relative; }
+.draggablecarousel-item img{ display:block; position:absolute; }
