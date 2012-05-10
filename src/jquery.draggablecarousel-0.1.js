@@ -122,8 +122,8 @@ jQuery.fn.draggableCarousel = function(options) {
        });
 
 
-       // Mobiles
-       var isTouchScreen  = navigator.userAgent.match(/iPhone|iPod|iPad|Android/i) ? 1 : 0;
+       // Touch-capable devices
+       var isTouchScreen  =  !!('ontouchstart' in window) ? 1 : 0;
        var lastCpos = 0, lastLeft = 0;
 
        draggableElement.bind('touchstart', function(e){
